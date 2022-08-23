@@ -1,3 +1,5 @@
+// selected player name
+
 const playerNamesArray = [];
 
 function addToList(element) {
@@ -32,7 +34,7 @@ function addToList(element) {
     
 }
 
-// calculate section
+// calculation
 
 document.getElementById('btn-calculate').addEventListener('click', function () {
     const everyPlayerCost  = document.getElementById('per-player-cost');
@@ -41,7 +43,7 @@ document.getElementById('btn-calculate').addEventListener('click', function () {
     const perPlayerCostValue = everyPlayerCost.value;
 
     if (perPlayerCostValue < 1 || perPlayerCostValue === '') {
-        alert('Please enter positive value');
+        alert('Please enter positive number');
     }
 
     else {
@@ -55,3 +57,26 @@ document.getElementById('btn-calculate').addEventListener('click', function () {
     }
 });
 
+// total calculation
+
+document.getElementById('btn-calculate-total').addEventListener('click', function () {
+    const costOfManager = document.getElementById('manager');
+    const valueOfManagerCost = costOfManager.value;
+
+    const costOfCoach = document.getElementById('coach');
+    const valueOfCoachCost = costOfCoach.value;
+    if (valueOfManagerCost < 1 || valueOfCoachCost < 1 || valueOfManagerCost === '' || valueOfCoachCost === '') {
+        alert('Please enter positive number');
+    }
+    else {
+        const managerCost = getValueFromInputField('manager');
+        const coachCost = getValueFromInputField('coach');
+        const playerCost = document.getElementById('player-total-cost');
+        const playerCostInnerText = playerCost.innerText;
+        const convertStringToFloat = parseFloat(playerCostInnerText);
+        const totalExpenses = managerCost + coachCost + convertStringToFloat;
+        const calculateTotalExpenses = document.getElementById('total-expenses');
+        calculateTotalExpenses.innerText = totalExpenses;
+
+    }
+});

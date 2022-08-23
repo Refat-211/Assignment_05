@@ -1,3 +1,5 @@
+// common function
+
 function getValueFromInputField(inputId) {
     const perPlayerCostId = document.getElementById(inputId);
     const costValue = perPlayerCostId.value;
