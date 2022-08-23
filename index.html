@@ -1,14 +1,120 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best five</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PSG</title>
+
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+
+    <!-- css style -->
+    <style>
+        body{
+            background-color: rgb(106 113 127);
+            margin: 0;
+            padding: 0;
+        }
+        .header-img{
+            height: 600px;
+            background-image: url(./images/psg-header-image.png);
+            background-size: 100% 100%;
+            overflow: hidden;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>asdasdasdsadasd</h1>
-    <p>asdasdasdasd</p>
-    <p>adsadsasdsdadsads</p>
+    <!-- header start -->
+    <section class="header-img mb-2">
+        <h1 class="text-center mt-12 text-white text-5xl font-bold">Select Your Favourite Five Players</h1>
+    </section>
+    <!-- header end -->
+
+    <!-- Main start -->
+    <section class="mb-12 bg-gray-500">
+        <div class="grid grid-cols-1 gap-2 mx-2">
+            <div class="grid grid-cols-4 p-2 gap-2">
+                <div class="card bg-base-100 shadow-xl rounded-none">
+                    <figure><img class="w-full" src="./images/player1.png" alt="" /></figure>
+                    <div class="card-body">
+                        <h2 class="text-white font-semibold text-center text-3xl">Lionel Messi</h2>
+                        <p class="text-white font-semibold text-center">36 Goals . 120 Assist</p>
+                        <div class="card-actions justify-center">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl rounded-none">
+                    <figure><img class="w-full" src="./images/player2.png" alt="" /></figure>
+                    <div class="card-body">
+                        <h2 class="text-white font-semibold text-center text-3xl">Neymar Jr</h2>
+                        <p class="text-white font-semibold text-center">22 Goals . 100 Assist</p>
+                        <div class="card-actions justify-center">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl rounded-none">
+                    <figure><img class="w-full" src="./images/player3.png" alt="" /></figure>
+                    <div class="card-body">
+                        <h2 class="text-white font-semibold text-center text-3xl">Kylian Mbappé</h2>
+                        <p class="text-white font-semibold text-center">32 Goals . 89 Assist</p>
+                        <div class="card-actions justify-center">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl rounded-none">
+            
+                </div>
+                <div class="card bg-base-100 shadow-xl rounded-none">
+                    <figure><img class="w-full" src="./images/player4.png" alt="" /></figure>
+                    <div class="card-body">
+                        <h2 class="text-white font-semibold text-center text-3xl">Vítor Machado</h2>
+                        <p class="text-white font-semibold text-center">12 Goals . 111 Assist</p>
+                        <div class="card-actions justify-center">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl rounded-none">
+                    <figure><img class="w-full" src="./images/player5.png" alt="" /></figure>
+                    <div class="card-body">
+                        <h2 class="text-white font-semibold text-center text-3xl">Sergio Ramos</h2>
+                        <p class="text-white font-semibold text-center">10 Goals . 19 Assist</p>
+                        <div class="card-actions justify-center">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl rounded-none">
+                    <figure><img class="w-full" src="./images/player6.png" alt="" /></figure>
+                    <div class="card-body">
+                        <h2 class="text-white font-semibold text-center text-3xl">Renato Sanches</h2>
+                        <p class="text-white font-semibold text-center">9 Goals . 12 Assist</p>
+                        <div class="card-actions justify-center">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl rounded-none">
+            
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Main end -->
+
+    <!-- footer start -->
+
+    <!-- footer end -->
+
+
 </body>
+
 </html>
