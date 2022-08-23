@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PSG</title>
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="./images/psg-logo.png" type="image/x-icon">
 
     <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -45,7 +47,7 @@
                         <h2 class="text-white font-semibold text-center text-3xl">Lionel Messi</h2>
                         <p class="text-white font-semibold text-center">36 Goals . 120 Assist</p>
                         <div class="card-actions justify-center">
-                            <button class="btn text-xl btn-primary">Select</button>
+                            <button class="btn text-xl btn-primary" onclick="addToList(this)">Select</button>
                         </div>
                     </div>
                 </div>
@@ -55,7 +57,7 @@
                         <h2 class="text-white font-semibold text-center text-3xl">Neymar Jr</h2>
                         <p class="text-white font-semibold text-center">22 Goals . 100 Assist</p>
                         <div class="card-actions justify-center">
-                            <button class="btn text-xl btn-primary">Select</button>
+                            <button class="btn text-xl btn-primary" onclick="addToList(this)">Select</button>
                         </div>
                     </div>
                 </div>
@@ -65,12 +67,15 @@
                         <h2 class="text-white font-semibold text-center text-3xl">Kylian Mbappé</h2>
                         <p class="text-white font-semibold text-center">32 Goals . 89 Assist</p>
                         <div class="card-actions justify-center">
-                            <button class="btn text-xl btn-primary">Select</button>
+                            <button class="btn text-xl btn-primary" onclick="addToList(this)">Select</button>
                         </div>
                     </div>
                 </div>
                 <div class="card bg-base-300 shadow-xl rounded-none">
-                    <h1 class="text-white font-semibold text-2xl text-center my-2">Selected - <span class="text-purple-500">0</span></h1>
+                    <h1 class="text-white font-semibold text-2xl text-center my-2">Selected - <span class="text-purple-500" id="selected-name">0</span></h1>
+                    <ol id="player-list">
+
+                    </ol>
                 </div>
                 <div class="card bg-base-100 shadow-xl rounded-none">
                     <figure><img class="w-full" src="./images/player4.png" alt="" /></figure>
@@ -78,7 +83,7 @@
                         <h2 class="text-white font-semibold text-center text-3xl">Vítor Machado</h2>
                         <p class="text-white font-semibold text-center">12 Goals . 111 Assist</p>
                         <div class="card-actions justify-center">
-                            <button class="btn text-xl btn-primary">Select</button>
+                            <button class="btn text-xl btn-primary" onclick="addToList(this)">Select</button>
                         </div>
                     </div>
                 </div>
@@ -88,7 +93,7 @@
                         <h2 class="text-white font-semibold text-center text-3xl">Sergio Ramos</h2>
                         <p class="text-white font-semibold text-center">10 Goals . 19 Assist</p>
                         <div class="card-actions justify-center">
-                            <button class="btn text-xl btn-primary">Select</button>
+                            <button class="btn text-xl btn-primary" onclick="addToList(this)">Select</button>
                         </div>
                     </div>
                 </div>
@@ -98,7 +103,7 @@
                         <h2 class="text-white font-semibold text-center text-3xl">Renato Sanches</h2>
                         <p class="text-white font-semibold text-center">9 Goals . 12 Assist</p>
                         <div class="card-actions justify-center">
-                            <button class="btn text-xl btn-primary">Select</button>
+                            <button class="btn text-xl btn-primary" onclick="addToList(this)">Select</button>
                         </div>
                     </div>
                 </div>
@@ -148,7 +153,8 @@
 
     <!-- footer end -->
 
-
+    <!-- js file link -->
+    <script src="./js/psg.js"></script>
 </body>
 
 </html>
