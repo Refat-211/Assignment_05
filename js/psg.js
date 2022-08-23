@@ -32,7 +32,7 @@ function addToList(element) {
     
 }
 
-
+// calculate section
 
 document.getElementById('btn-calculate').addEventListener('click', function () {
     const everyPlayerCost  = document.getElementById('per-player-cost');
@@ -41,16 +41,17 @@ document.getElementById('btn-calculate').addEventListener('click', function () {
     const perPlayerCostValue = everyPlayerCost.value;
 
     if (perPlayerCostValue < 1 || perPlayerCostValue === '') {
-        alert('Please enter valid number');
+        alert('Please enter positive value');
     }
 
     else {
         const playerList = document.getElementById('player-list');
         const playerListItems = playerList.childElementCount;
-        const perPlayerCost = getInputValue('per-player-cost');
+        const perPlayerCost = getValueFromInputField('per-player-cost');
         const totalCostOfPlayers = playerListItems * perPlayerCost;
         const totalCost = document.getElementById('player-total-cost');
         totalCost.innerText = totalCostOfPlayers;
 
     }
 });
+

@@ -1,7 +1,7 @@
-function getInputValue(inputFieldId) {
-    const playerCostId = document.getElementById(inputFieldId);
-    let playerCostValue = playerCostId.value;
-    let converPlayerCostValue = parseFloat(playerCostValue);
-    playerCostId.value = '';
-    return converPlayerCostValue;
+function getValueFromInputField(inputId) {
+    const perPlayerCostId = document.getElementById(inputId);
+    const costValue = perPlayerCostId.value;
+    const convertToFloat = parseFloat(costValue);
+    perPlayerCostId.value = '';
+    return convertToFloat;
 }
